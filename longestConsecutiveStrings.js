@@ -9,11 +9,7 @@ function longestConsec(strarr, k) {
   let longestStr = strarr[0]
   for(let i=0; i < strarr.length - k + 1; i++){
 
-    let str = ''
-    for(let j = i; j<= i+k-1; j++){
-      str += strarr[j]
-    }
-    console.log(str)
+    let str = strarr.slice(i, i + k).join('');
     if(str.length > longestStr.length){
       longestStr = str
     }
