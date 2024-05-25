@@ -34,8 +34,6 @@ function romanToArabic(num){
 
 
 function arabicToRoman(num){
-  if(isNaN(num)) return ''
-
   let rom = ''
   const arabic = {
   "M" : 1000,
